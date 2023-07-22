@@ -14,15 +14,15 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = '10001717'
 API_HASH = 'c8cdc2079f7ab083e644381740260265'
-BOT_TOKEN = '6236356662:AAHo12vJnwwihitmaw6hVZA-VFTcMcBesAQ'
+BOT_TOKEN = '6528876357:AAHQBaxx9nYNCC_G1mV58DB0S_QmJd0uIdA'
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://telegra.ph/file/0e9b4a6e8d50b39c2a207.jpg https://telegra.ph/file/045eab7f66c7d236f908d.jpg')).split()
+PICS = (environ.get('PICS', 'https://graph.org/file/92bcf73a0428be54e2d59.mp4')).split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5793708681 5531461861').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5531461861 1198310247 1878911986 5652656279').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001833247384').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -35,27 +35,29 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # FSUB
-auth_channel = environ.get('AUTH_CHANNEL', '-1001844014976')
+auth_channel = environ.get('AUTH_CHANNEL', '-1001887491695')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 # Set to False inside the bracket if you don't want to use Request Channel else set it to Channel ID
-REQ_CHANNEL = environ.get("REQ_CHANNEL", '-1001844014976')
+REQ_CHANNEL = environ.get("REQ_CHANNEL", '-1001887491695')
 REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL) else False
 JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001869718840))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001852979481))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'CINEMAHUB_NEW_MOVIES')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", """<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}</b>
-
-╔════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╗
-<a href=t.me/+5os6sdIveVYwMjM1>▫️ ᴄʜᴀɴɴᴇʟ </a>
-<a href=t.me/+j4mDJ-QCZ9QzYWQ1>▫️ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 1</a>
-<a href=t.me/+ypPOj9vGLzAwM2E1>▫️ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 2</a>
-<a href=t.me/+xQ1uGy1q53NlMmQ9>▫️ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 3 </a>
-╚════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╝""") 
+╔════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═════╗
+Main Channel ➧ @CM_HUB_CHANNEL
+1st Group ➧ @CINEMA_HUB_GROUP1
+2nd Group ➧ @CINEMA_HUB_GROUP2
+3rd Group ➧ @CINEMA_HUBGROUP3
+UPDATE ➧ @UPDATECHANNELHUB
+ @CINEMAHUB_LINK
+🎗️ʝσιи 🎗️ ѕнαяє🎗️ ѕυρρσят🎗️
+╚════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═════╝>""")
 
 
 
