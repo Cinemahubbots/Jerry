@@ -50,7 +50,7 @@ IMDB = is_enabled((environ.get('IMDB', "False")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", """<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}</b>
 ╔════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═════╗
-Main Channel ➧ https://t.me/+U0NGfbaG3GI3OGJl
+Main Channel ➧ https://t.me/+_CIGB5Zb3k4zZTg1
 🎗️ʝσιи 🎗️ ѕнαяє🎗️ ѕυρρσят🎗️
 ╚════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═════╝>""")
 
